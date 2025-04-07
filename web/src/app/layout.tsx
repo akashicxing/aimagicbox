@@ -8,6 +8,9 @@ import Script from 'next/script'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
+  metadataBase: process.env.NODE_ENV === 'production' 
+    ? new URL('https://aimagicbox.online')
+    : new URL('http://localhost:3000'),
   title: 'AI Magic Box - Discover The Best AI Tools',
   description: 'Explore our curated collection of the best AI tools. Find and compare top AI solutions for various tasks including content creation, image generation, and more.',
   keywords: 'AI tools, artificial intelligence, machine learning, ChatGPT, Midjourney, DALL-E, AI applications',
@@ -31,7 +34,7 @@ export const metadata: Metadata = {
     siteName: 'AI Magic Box',
     images: [
       {
-        url: '/og-image.png',
+        url: 'https://aimagicbox.online/og-image.png',
         width: 1200,
         height: 630,
         alt: 'AI Magic Box - AI Tools Directory',
@@ -44,7 +47,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'AI Magic Box - Discover The Best AI Tools',
     description: 'Find and compare the best AI tools for your needs. Curated collection of top AI solutions.',
-    images: ['/og-image.png'],
+    images: ['https://aimagicbox.online/og-image.png'],
     creator: '@aimagicbox',
   },
   verification: {

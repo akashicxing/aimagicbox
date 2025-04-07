@@ -33,14 +33,25 @@ export default function ToolsGrid({ tools }: ToolsGridProps) {
                   <p className="text-sm font-medium text-blue-600">
                     {tool.category}
                   </p>
-                  <a href={tool.redirect_url} className="block mt-2">
-                    <p className="text-xl font-semibold text-gray-900 dark:text-white">
-                      {tool.name}
-                    </p>
-                    <p className="mt-3 text-base text-gray-500 dark:text-gray-400">
-                      {tool.description}
-                    </p>
-                  </a>
+                  {tool.redirect_url ? (
+                    <a href={tool.redirect_url} className="block mt-2">
+                      <p className="text-xl font-semibold text-gray-900 dark:text-white">
+                        {tool.name}
+                      </p>
+                      <p className="mt-3 text-base text-gray-500 dark:text-gray-400">
+                        {tool.description}
+                      </p>
+                    </a>
+                  ) : (
+                    <div className="block mt-2">
+                      <p className="text-xl font-semibold text-gray-900 dark:text-white">
+                        {tool.name}
+                      </p>
+                      <p className="mt-3 text-base text-gray-500 dark:text-gray-400">
+                        {tool.description}
+                      </p>
+                    </div>
+                  )}
                 </div>
                 <div className="mt-6 flex items-center">
                   <div className="flex-shrink-0">
