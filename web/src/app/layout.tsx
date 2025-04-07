@@ -8,7 +8,9 @@ import Script from 'next/script'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://aimagicbox.online'),
+  metadataBase: process.env.NODE_ENV === 'production' 
+    ? new URL('https://aimagicbox.online')
+    : new URL('http://localhost:3000'),
   title: 'AI Magic Box - Discover The Best AI Tools',
   description: 'Explore our curated collection of the best AI tools. Find and compare top AI solutions for various tasks including content creation, image generation, and more.',
   keywords: 'AI tools, artificial intelligence, machine learning, ChatGPT, Midjourney, DALL-E, AI applications',
@@ -29,7 +31,6 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'AI Magic Box - Your Gateway to AI Tools',
     description: 'Discover and compare the best AI tools for your needs. From content creation to image generation, find the perfect AI solution.',
-    url: 'https://aimagicbox.online',
     siteName: 'AI Magic Box',
     images: [
       {
