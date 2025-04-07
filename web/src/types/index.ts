@@ -14,7 +14,8 @@ export interface Tool {
 }
 
 export interface Category {
-  id: string;
   name: string;
-  count: number;
+  description: string;
+  id?: string;
+  count?: number;
 } 
