@@ -90,15 +90,10 @@ export default function SearchSection() {
             </div>
             <div className="flex items-center space-x-4">
               <a
-                href={`https://www.toolify.ai/search/${encodeURIComponent(query)}?r=index`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center px-6 py-3 bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-medium rounded-xl transition duration-150 ease-in-out shadow-lg shadow-emerald-600/25"
+                href="/search"
+                className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-emerald-600 hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500"
               >
-                <span>Search on Toolify</span>
-                <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                </svg>
+                Search
               </a>
               <button
                 onClick={() => setQuery('')}
