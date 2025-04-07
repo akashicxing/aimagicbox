@@ -80,9 +80,9 @@ export default function ToolsList() {
               <div className="relative w-full h-48 overflow-hidden rounded-t-2xl">
                 {tool.screenshot && (
                   <img
-                    src="https://google.com/image.jpg"
-                    alt={`${tool.name} preview`}
-                    className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300"
+                    className="w-full h-48 object-cover rounded-lg"
+                    src="/placeholder.jpg"
+                    alt={tool.name}
                   />
                 )}
               </div>
@@ -112,15 +112,10 @@ export default function ToolsList() {
                 <div className="mt-4 flex items-center justify-between">
                   {tool.redirect_url ? (
                     <a
-                      href="https://google.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-medium rounded-lg transition duration-150 ease-in-out shadow-lg shadow-emerald-600/25"
+                      href="/"
+                      className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-emerald-600 hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500"
                     >
                       Visit Tool
-                      <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                      </svg>
                     </a>
                   ) : (
                     <span className="text-gray-500 dark:text-gray-400">URL not available</span>
