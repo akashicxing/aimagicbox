@@ -11,6 +11,7 @@ export interface Tool {
   cos_logo_url: string | null;
   cos_preview_url: string | null;
   screenshot: string;
+  url?: string;
 }
 
 export interface Category {
