@@ -9,7 +9,9 @@ async function getTools(): Promise<Tool[]> {
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = process.env.NODE_ENV === 'production'
     ? 'https://aimagicbox.online'
-    : 'http://localhost:3000';
+    : process.env.NODE_ENV === 'development'
+      ? 'http://localhost:3000'
+      : 'https://aimagicbox.online'; // 默认使用生产环境 URL
 
   const tools = await getTools();
   const toolUrls = tools.map((tool) => ({
