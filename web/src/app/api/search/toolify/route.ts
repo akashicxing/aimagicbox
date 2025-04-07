@@ -1,6 +1,5 @@
 import { NextResponse } from 'next/server';
 import * as cheerio from 'cheerio';
-import fetch from 'node-fetch';
 
 interface ToolifySearchResult {
   title: string;
