@@ -1,44 +1,94 @@
-import type { Tool } from '@/types';
+import { Tool } from '../types';
 
 export const tools: Tool[] = [
   {
     id: "1",
+    tool_id: "chatgpt",
     name: "ChatGPT",
     description: "OpenAI's powerful language model for natural conversations and content generation",
     category: "AI Social Media Assistant",
     url: "https://chat.openai.com",
-    screenshot: "/images/tools/chatgpt.jpg"
+    screenshot: "/images/tools/chatgpt.jpg",
+    redirect_url: "https://chat.openai.com",
+    visits: 0,
+    growth_rate: 0,
+    cos_logo_url: "",
+    cos_preview_url: "",
+    saves: 0
   },
   {
     id: "2",
+    tool_id: "midjourney",
     name: "Midjourney",
-    description: "Create stunning artwork and images using AI",
-    category: "AI Art Generator",
+    description: "AI art generator that creates stunning images from text descriptions",
+    category: "AI Image Generator",
     url: "https://www.midjourney.com",
-    screenshot: "/images/tools/midjourney.jpg"
+    screenshot: "/images/tools/midjourney.jpg",
+    redirect_url: "https://www.midjourney.com",
+    visits: 0,
+    growth_rate: 0,
+    cos_logo_url: "",
+    cos_preview_url: "",
+    saves: 0
   },
   {
     id: "3",
-    name: "Copy.ai",
-    description: "AI-powered copywriting tool for marketing content",
-    category: "AI Social Media Assistant",
-    url: "https://www.copy.ai",
-    screenshot: "/images/tools/copyai.jpg"
+    tool_id: "copilot",
+    name: "GitHub Copilot",
+    description: "AI-powered code completion tool that helps developers write better code faster",
+    category: "AI Development Tools",
+    url: "https://github.com/features/copilot",
+    screenshot: "/images/tools/copilot.jpg",
+    redirect_url: "https://github.com/features/copilot",
+    visits: 0,
+    growth_rate: 0,
+    cos_logo_url: "",
+    cos_preview_url: "",
+    saves: 0
   },
   {
     id: "4",
-    name: "Jasper",
-    description: "AI writing assistant for long-form content",
-    category: "AI Story Writing",
-    url: "https://www.jasper.ai",
-    screenshot: "/images/tools/jasper.jpg"
+    tool_id: "copy-ai",
+    name: "Copy.ai",
+    description: "AI-powered copywriting tool for marketing content",
+    category: "AI Writing Assistant",
+    url: "https://www.copy.ai",
+    screenshot: "/images/tools/copyai.jpg",
+    redirect_url: "https://www.copy.ai",
+    visits: 0,
+    growth_rate: 0,
+    cos_logo_url: "",
+    cos_preview_url: "",
+    saves: 0
   },
   {
     id: "5",
+    tool_id: "jasper",
+    name: "Jasper",
+    description: "AI writing assistant for long-form content",
+    category: "AI Writing Assistant",
+    url: "https://www.jasper.ai",
+    screenshot: "/images/tools/jasper.jpg",
+    redirect_url: "https://www.jasper.ai",
+    visits: 0,
+    growth_rate: 0,
+    cos_logo_url: "",
+    cos_preview_url: "",
+    saves: 0
+  },
+  {
+    id: "6",
+    tool_id: "dalle",
     name: "DALL-E",
     description: "Create original, realistic images and art from text descriptions",
-    category: "AI Art Generator",
+    category: "AI Image Generator",
     url: "https://openai.com/dall-e-2",
-    screenshot: "/images/tools/dalle.jpg"
+    screenshot: "/images/tools/dalle.jpg",
+    redirect_url: "https://openai.com/dall-e-2",
+    visits: 0,
+    growth_rate: 0,
+    cos_logo_url: "",
+    cos_preview_url: "",
+    saves: 0
   }
 ]; 
