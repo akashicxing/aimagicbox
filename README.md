@@ -1,6 +1,57 @@
- # AI Magic Box
+# AI Magic Box
 
-AI Magic Box 是一个 AI 工具导航网站，帮助用户发现和比较最新、最创新的 AI 工具。
+AI Magic Box 是一个帮助用户发现和使用最佳 AI 工具的平台。
+
+## 本地开发
+
+1. 克隆仓库
+```bash
+git clone git@github.com:akashicxing/aimagicbox.git
+cd aimagicbox/web
+```
+
+2. 安装依赖
+```bash
+npm install
+```
+
+3. 配置环境变量
+- 复制 `.env.example` 为 `.env.local`
+- 填入以下必要的环境变量：
+  ```
+  NEXTAUTH_URL=http://localhost:3000
+  NEXTAUTH_SECRET=你的密钥
+  GOOGLE_CLIENT_ID=你的Google客户端ID
+  GOOGLE_CLIENT_SECRET=你的Google客户端密钥
+  ```
+
+4. 启动开发服务器
+```bash
+npm run dev
+```
+
+## 部署
+
+项目使用 Cloudflare Pages 部署，需要配置以下内容：
+
+1. 构建设置
+- 构建命令：`npm run build`
+- 输出目录：`.next`
+- Node.js 版本：18.x
+
+2. 环境变量
+- `NEXTAUTH_URL`: 生产环境域名
+- `NEXTAUTH_SECRET`: 密钥
+- `GOOGLE_CLIENT_ID`: Google OAuth 客户端 ID
+- `GOOGLE_CLIENT_SECRET`: Google OAuth 客户端密钥
+
+## 技术栈
+
+- Next.js 14
+- React
+- TypeScript
+- Tailwind CSS
+- NextAuth.js
 
 ## 功能特点
 
@@ -10,15 +61,6 @@ AI Magic Box 是一个 AI 工具导航网站，帮助用户发现和比较最新
 - 📱 响应式设计：完美适配各种设备
 - 🎨 现代界面：流畅的动画和过渡效果
 - 👤 用户系统：支持注册、登录和收藏（开发中）
-
-## 技术栈
-
-- **前端框架**: Next.js 14
-- **样式方案**: Tailwind CSS
-- **状态管理**: React Hooks
-- **动画效果**: Framer Motion
-- **UI 组件**: Headless UI
-- **图标**: Heroicons
 
 ## 开发计划
 
@@ -43,26 +85,6 @@ AI Magic Box 是一个 AI 工具导航网站，帮助用户发现和比较最新
 - [ ] 搜索功能后端 API
 - [ ] 工具提交功能
 - [ ] 评论系统
-
-## 快速开始
-
-1. 克隆项目
-```bash
-git clone https://gitee.com/akashicxing/aimagicbox.git
-```
-
-2. 安装依赖
-```bash
-cd aimagicbox/web
-npm install
-```
-
-3. 启动开发服务器
-```bash
-npm run dev
-```
-
-4. 打开浏览器访问 http://localhost:3000
 
 ## 项目结构
 

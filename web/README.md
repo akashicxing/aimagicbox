@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AI Magic Box Web
 
-## Getting Started
+AI Magic Box 的 Web 前端项目。
 
-First, run the development server:
+## 开发环境设置
 
+1. 安装依赖
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. 环境变量配置
+- 复制 `.env.example` 为 `.env.local`
+- 填入必要的环境变量
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. 开发
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. 构建
+```bash
+npm run build
+```
 
-## Learn More
+## 项目结构
 
-To learn more about Next.js, take a look at the following resources:
+```
+src/
+├── app/              # Next.js 应用路由
+├── components/       # React 组件
+├── data/            # 静态数据
+├── lib/             # 工具函数
+├── styles/          # 样式文件
+└── types/           # TypeScript 类型定义
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 开发指南
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 添加新工具
+1. 在 `src/data/tools.json` 中添加工具信息
+2. 运行 `npm run validate` 验证数据格式
+3. 提交更改
 
-## Deploy on Vercel
+### 样式指南
+- 使用 Tailwind CSS 进行样式设计
+- 遵循响应式设计原则
+- 支持深色模式
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 组件开发
+- 使用 TypeScript
+- 确保组件是响应式的
+- 添加适当的加载状态
+- 处理错误情况
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 部署
+
+项目使用 Cloudflare Pages 部署，构建输出目录为 `.next`。
+
+### 环境变量
+生产环境需要在 Cloudflare Pages 中配置以下环境变量：
+- `NEXTAUTH_URL`
+- `NEXTAUTH_SECRET`
+- `GOOGLE_CLIENT_ID`
+- `GOOGLE_CLIENT_SECRET`
