@@ -1,0 +1,247 @@
+[
+  {
+    "id": "AI Social Media Assistant",
+    "name": "AI Social Media Assistant",
+    "count": 4
+  },
+  {
+    "id": "AI Lead Generation",
+    "name": "AI Lead Generation",
+    "count": 2
+  },
+  {
+    "id": "AI Email Marketing",
+    "name": "AI Email Marketing",
+    "count": 1
+  },
+  {
+    "id": "AI Story Writing",
+    "name": "AI Story Writing",
+    "count": 1
+  },
+  {
+    "id": "AI Art Generator",
+    "name": "AI Art Generator",
+    "count": 1
+  },
+  {
+    "id": "AI YouTube Assistant",
+    "name": "AI YouTube Assistant",
+    "count": 2
+  },
+  {
+    "id": "AI Tutorial",
+    "name": "AI Tutorial",
+    "count": 1
+  },
+  {
+    "id": "AI Productivity Tools",
+    "name": "AI Productivity Tools",
+    "count": 4
+  },
+  {
+    "id": "Prompt",
+    "name": "Prompt",
+    "count": 2
+  },
+  {
+    "id": "AI Reviews Assistant",
+    "name": "AI Reviews Assistant",
+    "count": 1
+  },
+  {
+    "id": "AI Analytics Assistant",
+    "name": "AI Analytics Assistant",
+    "count": 10
+  },
+  {
+    "id": "Other",
+    "name": "Other",
+    "count": 3
+  },
+  {
+    "id": "Large Language Models (LLMs)",
+    "name": "Large Language Models (LLMs)",
+    "count": 5
+  },
+  {
+    "id": "AI Customer Service Assistant",
+    "name": "AI Customer Service Assistant",
+    "count": 5
+  },
+  {
+    "id": "AI Knowledge Base",
+    "name": "AI Knowledge Base",
+    "count": 1
+  },
+  {
+    "id": "AI Interview Assistant",
+    "name": "AI Interview Assistant",
+    "count": 1
+  },
+  {
+    "id": "Text to Image",
+    "name": "Text to Image",
+    "count": 1
+  },
+  {
+    "id": "AI App Builder",
+    "name": "AI App Builder",
+    "count": 2
+  },
+  {
+    "id": "Copywriting",
+    "name": "Copywriting",
+    "count": 1
+  },
+  {
+    "id": "AI Tools Directory",
+    "name": "AI Tools Directory",
+    "count": 1
+  },
+  {
+    "id": "AI Developer Tools",
+    "name": "AI Developer Tools",
+    "count": 1
+  },
+  {
+    "id": "AI Image Enhancer",
+    "name": "AI Image Enhancer",
+    "count": 1
+  },
+  {
+    "id": "AI Documents Assistant",
+    "name": "AI Documents Assistant",
+    "count": 1
+  },
+  {
+    "id": "AI Music Generator",
+    "name": "AI Music Generator",
+    "count": 2
+  },
+  {
+    "id": "AI Chatbot",
+    "name": "AI Chatbot",
+    "count": 5
+  },
+  {
+    "id": "AI Interior & Room Design",
+    "name": "AI Interior & Room Design",
+    "count": 2
+  },
+  {
+    "id": "AI Team Collaboration",
+    "name": "AI Team Collaboration",
+    "count": 2
+  },
+  {
+    "id": "AI Accounting Assistant",
+    "name": "AI Accounting Assistant",
+    "count": 1
+  },
+  {
+    "id": "Healthcare",
+    "name": "Healthcare",
+    "count": 1
+  },
+  {
+    "id": "AI Code Assistant",
+    "name": "AI Code Assistant",
+    "count": 2
+  },
+  {
+    "id": "AI Advertising Assistant",
+    "name": "AI Advertising Assistant",
+    "count": 2
+  },
+  {
+    "id": "Fitness",
+    "name": "Fitness",
+    "count": 2
+  },
+  {
+    "id": "AI Reply Assistant",
+    "name": "AI Reply Assistant",
+    "count": 1
+  },
+  {
+    "id": "Investing Assistant",
+    "name": "Investing Assistant",
+    "count": 1
+  },
+  {
+    "id": "AI SEO Assistant",
+    "name": "AI SEO Assistant",
+    "count": 4
+  },
+  {
+    "id": "Domain Name Generator",
+    "name": "Domain Name Generator",
+    "count": 1
+  },
+  {
+    "id": "AI CRM Assistant",
+    "name": "AI CRM Assistant",
+    "count": 1
+  },
+  {
+    "id": "AI Dating Assistant",
+    "name": "AI Dating Assistant",
+    "count": 1
+  },
+  {
+    "id": "Recording",
+    "name": "Recording",
+    "count": 1
+  },
+  {
+    "id": "AI Content Generator",
+    "name": "AI Content Generator",
+    "count": 1
+  },
+  {
+    "id": "AI Animated Video",
+    "name": "AI Animated Video",
+    "count": 1
+  },
+  {
+    "id": "AI Avatar Generator",
+    "name": "AI Avatar Generator",
+    "count": 1
+  },
+  {
+    "id": "AI Trading Bot Assistant",
+    "name": "AI Trading Bot Assistant",
+    "count": 1
+  },
+  {
+    "id": "AI Video Generator",
+    "name": "AI Video Generator",
+    "count": 1
+  },
+  {
+    "id": "Legal Assistant",
+    "name": "Legal Assistant",
+    "count": 1
+  },
+  {
+    "id": "Parenting",
+    "name": "Parenting",
+    "count": 1
+  },
+  {
+    "id": "AI Instagram Assistant",
+    "name": "AI Instagram Assistant",
+    "count": 1
+  },
+  {
+    "id": "No-Code&Low-Code",
+    "name": "No-Code&Low-Code",
+    "count": 1
+  },
+  {
+    "id": "AI Voice Assistants",
+    "name": "AI Voice Assistants",
+    "count": 1
+  }
+]
