@@ -29,7 +29,7 @@ async function main() {
         cos_preview_url,
         cos_screenshots
       FROM ai_tools 
-      WHERE status = 2 
+      WHERE images_synced = 1 
       AND is_ad = 0
       ORDER BY sort_order DESC, visits DESC
     `);
@@ -38,7 +38,7 @@ async function main() {
     const [categories] = await connection.execute(`
       SELECT DISTINCT category 
       FROM ai_tools 
-      WHERE status = 2 
+      WHERE images_synced = 1 
       AND category IS NOT NULL 
       AND category != ''
     `);
