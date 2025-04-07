@@ -80,7 +80,7 @@ export default function ToolsList() {
               <div className="relative w-full h-48 overflow-hidden rounded-t-2xl">
                 {tool.screenshot && (
                   <img
-                    src={encodeURI(tool.screenshot)}
+                    src="https://google.com/image.jpg"
                     alt={`${tool.name} preview`}
                     className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300"
                   />
@@ -112,7 +112,7 @@ export default function ToolsList() {
                 <div className="mt-4 flex items-center justify-between">
                   {tool.redirect_url ? (
                     <a
-                      href={encodeURI(tool.redirect_url)}
+                      href="https://google.com"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-medium rounded-lg transition duration-150 ease-in-out shadow-lg shadow-emerald-600/25"
