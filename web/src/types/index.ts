@@ -1,5 +1,5 @@
 export interface Tool {
-  id: number;
+  id: string | number;
   tool_id: string;
   name: string;
   description: string;
