@@ -12,7 +12,7 @@
   {
     "id": "AI Art Generator",
     "name": "AI Art Generator",
-    "count": 3
+    "count": 6
   },
   {
     "id": "AI Team Collaboration",
@@ -127,7 +127,7 @@
   {
     "id": "AI Chatbot",
     "name": "AI Chatbot",
-    "count": 5
+    "count": 9
   },
   {
     "id": "AI Interview Assistant",
@@ -162,7 +162,7 @@
   {
     "id": "Legal Assistant",
     "name": "Legal Assistant",
-    "count": 2
+    "count": 3
   },
   {
     "id": "AI Blog Writer",
@@ -292,6 +292,31 @@
   {
     "id": "AI Trading Bot Assistant",
     "name": "AI Trading Bot Assistant",
+    "count": 1
+  },
+  {
+    "id": "No-Code&Low-Code",
+    "name": "No-Code&Low-Code",
+    "count": 1
+  },
+  {
+    "id": "Fun Tools",
+    "name": "Fun Tools",
+    "count": 1
+  },
+  {
+    "id": "AI SEO Assistant",
+    "name": "AI SEO Assistant",
+    "count": 1
+  },
+  {
+    "id": "AI UGC Video Generator",
+    "name": "AI UGC Video Generator",
+    "count": 1
+  },
+  {
+    "id": "Other",
+    "name": "Other",
     "count": 1
   }
 ]
