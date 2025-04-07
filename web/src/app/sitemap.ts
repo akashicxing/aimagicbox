@@ -1,46 +1,30 @@
-import { tools } from '@/data/tools';
 import { MetadataRoute } from 'next';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = process.env.NODE_ENV === 'production'
-    ? 'https://aimagicbox.online'
-    : 'http://localhost:3000';
-  
-  // 工具页面 - 每周更新
-  const toolsUrls = tools.map((tool) => ({
-    url: `${baseUrl}/tool/${tool.id}`,
-    lastModified: new Date(),
-    changeFrequency: 'weekly' as const,
-    priority: 0.8,
-  }));
-
-  // 主要页面 - 每天更新
-  const mainPages = [
+  return [
     {
-      url: baseUrl,
+      url: 'https://aimagicbox.online',
       lastModified: new Date(),
-      changeFrequency: 'daily' as const,
+      changeFrequency: 'daily',
       priority: 1.0,
     },
     {
-      url: `${baseUrl}/tools`,
+      url: 'https://aimagicbox.online/tools',
       lastModified: new Date(),
-      changeFrequency: 'daily' as const,
+      changeFrequency: 'daily',
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/categories`,
+      url: 'https://aimagicbox.online/categories',
       lastModified: new Date(),
-      changeFrequency: 'weekly' as const,
+      changeFrequency: 'weekly',
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/about`,
+      url: 'https://aimagicbox.online/about',
       lastModified: new Date(),
-      changeFrequency: 'monthly' as const,
+      changeFrequency: 'monthly',
       priority: 0.5,
     }
   ];
-
-  return [...mainPages, ...toolsUrls];
 } 
