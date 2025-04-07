@@ -8,48 +8,8 @@ import Script from 'next/script'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'AI Magic Box - Discover The Best AI Tools',
-  description: 'Explore our curated collection of the best AI tools. Find and compare top AI solutions for various tasks including content creation, image generation, and more.',
-  keywords: 'AI tools, artificial intelligence, machine learning, ChatGPT, Midjourney, DALL-E, AI applications',
-  authors: [{ name: 'AI Magic Box' }],
-  creator: 'AI Magic Box Team',
-  publisher: 'AI Magic Box',
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-    },
-  },
-  openGraph: {
-    title: 'AI Magic Box - Your Gateway to AI Tools',
-    description: 'Discover and compare the best AI tools for your needs. From content creation to image generation, find the perfect AI solution.',
-    siteName: 'AI Magic Box',
-    images: [
-      {
-        url: '/og-image.png',
-        width: 1200,
-        height: 630,
-        alt: 'AI Magic Box - AI Tools Directory',
-      },
-    ],
-    locale: 'en_US',
-    type: 'website',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'AI Magic Box - Discover The Best AI Tools',
-    description: 'Find and compare the best AI tools for your needs. Curated collection of top AI solutions.',
-    images: ['/og-image.png'],
-    creator: '@aimagicbox',
-  },
-  verification: {
-    google: '',
-  },
+  title: 'AI Magic Box',
+  description: 'Discover The Best AI Tools',
 }
 
 export default function RootLayout({
@@ -61,35 +21,9 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
-        <link rel="icon" href="https://google.com/favicon.ico" />
-        <link rel="apple-touch-icon" href="https://google.com/apple-touch-icon.png" />
-        <link rel="manifest" href="https://google.com/manifest.json" />
-        {/* Google Analytics */}
-        <Script
-          strategy="afterInteractive"
-          src="https://google.com/gtag/js"
-        />
-        <Script
-          id="google-analytics"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}');
-            `,
-          }}
-        />
-        
-        {/* Google AdSense - 暂时注释掉
-        <Script
-          async
-          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${process.env.NEXT_PUBLIC_ADSENSE_ID}`}
-          crossOrigin="anonymous"
-          strategy="afterInteractive"
-        />
-        */}
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="manifest" href="/manifest.json" />
       </head>
       <body className={`${inter.className} min-h-screen bg-gradient-to-b from-emerald-50 via-white to-teal-50/50 dark:from-emerald-950 dark:via-gray-900 dark:to-teal-950/30`}>
         <Providers>
