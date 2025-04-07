@@ -7,9 +7,9 @@ import { Providers } from './providers'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'AI Magic Box - AI 工具导航',
-  description: '探索精选的人工智能工具，发现改变工作和创作方式的 AI 应用。',
-  keywords: 'AI工具, 人工智能, AI应用, 智能工具, AI软件, 机器学习工具, 图像生成, 文本处理, 视频创作, 代码辅助, AI导航',
+  title: 'AI Magic Box - Discover The Best AI Tools',
+  description: 'Explore our curated collection of the best AI tools. Find and compare top AI solutions for various tasks including content creation, image generation, and more.',
+  keywords: 'AI tools, artificial intelligence, machine learning, ChatGPT, Midjourney, DALL-E, AI applications',
   authors: [{ name: 'AI Magic Box' }],
   creator: 'AI Magic Box Team',
   publisher: 'AI Magic Box',
@@ -25,26 +25,26 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    type: 'website',
-    locale: 'zh_CN',
-    url: 'https://aimagicbox.com',
+    title: 'AI Magic Box - Your Gateway to AI Tools',
+    description: 'Discover and compare the best AI tools for your needs. From content creation to image generation, find the perfect AI solution.',
+    url: 'https://aimagicbox.online',
     siteName: 'AI Magic Box',
-    title: 'AI Magic Box - AI 工具导航',
-    description: '探索精选的人工智能工具，发现改变工作和创作方式的 AI 应用。',
     images: [
       {
-        url: 'https://aimagicbox.com/og-image.jpg',
+        url: 'https://aimagicbox.online/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'AI Magic Box - AI 工具导航',
+        alt: 'AI Magic Box - AI Tools Directory',
       },
     ],
+    locale: 'en_US',
+    type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'AI Magic Box - AI 工具导航',
-    description: '探索精选的人工智能工具，发现改变工作和创作方式的 AI 应用。',
-    images: ['https://aimagicbox.com/twitter-image.jpg'],
+    title: 'AI Magic Box - Discover The Best AI Tools',
+    description: 'Find and compare the best AI tools for your needs. Curated collection of top AI solutions.',
+    images: ['https://aimagicbox.online/og-image.png'],
     creator: '@aimagicbox',
   },
   alternates: {
