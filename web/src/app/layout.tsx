@@ -8,11 +8,7 @@ import Script from 'next/script'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  metadataBase: process.env.NODE_ENV === 'production' 
-    ? new URL('https://aimagicbox.online')
-    : process.env.NODE_ENV === 'development'
-      ? new URL('http://localhost:3000')
-      : new URL('https://aimagicbox.online'),
+  metadataBase: new URL('https://aimagicbox.online'),
   title: 'AI Magic Box - Discover The Best AI Tools',
   description: 'Explore our curated collection of the best AI tools. Find and compare top AI solutions for various tasks including content creation, image generation, and more.',
   keywords: 'AI tools, artificial intelligence, machine learning, ChatGPT, Midjourney, DALL-E, AI applications',
