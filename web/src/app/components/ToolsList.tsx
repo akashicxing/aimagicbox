@@ -7,9 +7,12 @@ import { Tool } from '@/types';
 import tools from '@/data/tools.json';
 import categories from '@/data/categories.json';
 
-export default function ToolsList() {
-  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
-  const [searchQuery, setSearchQuery] = useState<string>('');
+interface ToolsListProps {
+  selectedCategory?: string | null;
+  searchQuery?: string;
+}
+
+export default function ToolsList({ selectedCategory = null, searchQuery = '' }: ToolsListProps) {
   const [isLoading, setIsLoading] = useState(true);
 
   // Simulate loading effect

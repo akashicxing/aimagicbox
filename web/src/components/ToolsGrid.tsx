@@ -1,8 +1,8 @@
 import React from 'react'
-import { AITool } from '@/lib/types'
+import { Tool } from '@/types'
 
 interface ToolsGridProps {
-  tools: AITool[]
+  tools: Tool[]
 }
 
 export default function ToolsGrid({ tools }: ToolsGridProps) {
@@ -24,7 +24,7 @@ export default function ToolsGrid({ tools }: ToolsGridProps) {
               <div className="flex-shrink-0">
                 <img
                   className="h-48 w-full object-cover"
-                  src={tool.cos_logo_url || tool.source_logo_url}
+                  src={tool.screenshot || tool.cos_logo_url || '/placeholder.jpg'}
                   alt={tool.name}
                 />
               </div>
@@ -56,12 +56,12 @@ export default function ToolsGrid({ tools }: ToolsGridProps) {
                 <div className="mt-6 flex items-center">
                   <div className="flex-shrink-0">
                     <span className="text-sm text-gray-500 dark:text-gray-400">
-                      {tool.visits} visits
+                      {tool.visits ?? 0} visits
                     </span>
                   </div>
                   <div className="ml-3">
                     <span className="text-sm text-gray-500 dark:text-gray-400">
-                      {tool.growth_rate}% growth
+                      {tool.growth_rate ?? 0}% growth
                     </span>
                   </div>
                 </div>

@@ -18,10 +18,10 @@ declare module '@/components/Features' {
 
 declare module '@/components/ToolsGrid' {
   import { FC } from 'react'
-  import { AITool } from '@/lib/types'
+  import { Tool } from '@/types'
   
   interface ToolsGridProps {
-    tools: AITool[]
+    tools: Tool[]
   }
   
   const ToolsGrid: FC<ToolsGridProps>
