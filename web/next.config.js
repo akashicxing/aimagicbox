@@ -2,7 +2,14 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['aitools-1255475898.cos.ap-beijing.myqcloud.com'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'aitools-1255475898.cos.ap-beijing.myqcloud.com',
+        port: '',
+        pathname: '/screenshots/**',
+      },
+    ],
   },
   webpack: (config, { isServer }) => {
     // 为客户端和服务器端构建都应用优化

@@ -55,6 +55,11 @@ async function main() {
     
     // 处理工具数据，转换截图数组
     const processedTools = tools.map(tool => {
+      let screenshot = null;
+      if (tool.cos_screenshots && Array.isArray(tool.cos_screenshots) && tool.cos_screenshots.length > 0) {
+        screenshot = tool.cos_screenshots[0];
+      }
+      
       return {
         id: tool.id,
         tool_id: tool.tool_id,
@@ -67,9 +72,7 @@ async function main() {
         category: tool.category,
         cos_logo_url: tool.cos_logo_url,
         cos_preview_url: tool.cos_preview_url,
-        screenshot: Array.isArray(tool.cos_screenshots) && tool.cos_screenshots.length > 0 
-          ? tool.cos_screenshots[0]  // 取数组的第一个元素
-          : null
+        screenshot: screenshot
       };
     });
     
