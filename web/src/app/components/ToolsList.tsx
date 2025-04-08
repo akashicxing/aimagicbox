@@ -3,42 +3,41 @@
 import { useEffect, useState, useMemo } from 'react';
 import ToolsGrid from '@/components/ToolsGrid';
 import LoadingSpinner from '@/components/LoadingSpinner';
+import { Tool } from '@/types';
+import tools from '@/data/tools.json';
+import categories from '@/data/categories.json';
 
-export default function ToolsList({
-  selectedCategory,
-  searchQuery,
-}) {
-  const [tools, setTools] = useState([]);
-  const [loading, setLoading] = useState(true);
+export default function ToolsList() {
+  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+  const [searchQuery, setSearchQuery] = useState<string>('');
+  const [isLoading, setIsLoading] = useState(true);
 
+  // Simulate loading effect
   useEffect(() => {
-    fetch('/data/tools.json')
-      .then(res => res.json())
-      .then(data => {
-        setTools(data);
-        setLoading(false);
-      })
-      .catch(error => {
-        console.error('Error loading tools:', error);
-        setLoading(false);
-      });
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 1000);
+    return () => clearTimeout(timer);
   }, []);
 
+  // Filter tools list
   const filteredTools = useMemo(() => {
-    return tools.filter((tool) => {
-      const matchesCategory =
-        selectedCategory === '全部' || tool.category === selectedCategory;
-      const matchesSearch =
-        searchQuery === '' ||
+    return (tools as Tool[]).filter((tool) => {
+      const matchesCategory = !selectedCategory || tool.category === selectedCategory;
+      const matchesSearch = !searchQuery || 
         tool.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
         tool.description.toLowerCase().includes(searchQuery.toLowerCase());
       return matchesCategory && matchesSearch;
     });
-  }, [tools, selectedCategory, searchQuery]);
+  }, [selectedCategory, searchQuery]);
 
-  if (loading) {
+  if (isLoading) {
     return <LoadingSpinner />;
   }
 
-  return <ToolsGrid tools={filteredTools} />;
+  return (
+    <div className="container mx-auto px-4 py-8">
+      <ToolsGrid tools={filteredTools} />
+    </div>
+  );
 } 
