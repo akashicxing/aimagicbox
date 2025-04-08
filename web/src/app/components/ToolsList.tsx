@@ -1,8 +1,8 @@
 'use client';
 
 import { useEffect, useState, useMemo } from 'react';
-import ToolsGrid from './ToolsGrid';
-import LoadingSpinner from './LoadingSpinner';
+import ToolsGrid from '@/components/ToolsGrid';
+import LoadingSpinner from '@/components/LoadingSpinner';
 
 export default function ToolsList({
   selectedCategory,
