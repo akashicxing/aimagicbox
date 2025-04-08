@@ -7,13 +7,14 @@ import Image from 'next/image';
 export default function Logo() {
   return (
     <Link href="/" className="flex items-center space-x-3 group">
-      <div className="w-10 h-10 relative bg-white rounded-lg p-1">
+      <div className="w-10 h-10 relative rounded-lg bg-emerald-50/10 dark:bg-emerald-900/20 backdrop-blur-sm">
         <Image
-          src="/aimagic_logo.png"
-          alt="AI Magic Box Logo"
-          width={40}
-          height={40}
-          className="transform group-hover:scale-105 transition-transform duration-200"
+          className="w-8 h-8 transform group-hover:scale-105 transition-transform duration-200"
+          src="/aimagic_logo.jpg"
+          alt="AI Magic Box"
+          width={32}
+          height={32}
+          priority
         />
       </div>
       <div className="flex flex-col">
