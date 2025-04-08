@@ -79,10 +79,12 @@ export default function ToolsList() {
               {/* Tool preview image */}
               <div className="relative w-full h-48 overflow-hidden rounded-t-2xl">
                 {tool.screenshot && (
-                  <img
-                    className="w-full h-48 object-cover rounded-lg"
-                    src="/placeholder.jpg"
+                  <Image
+                    src={tool.screenshot}
                     alt={tool.name}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                 )}
               </div>
