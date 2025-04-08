@@ -12,17 +12,17 @@
   {
     "id": "AI Art Generator",
     "name": "AI Art Generator",
-    "count": 6
+    "count": 7
   },
   {
     "id": "AI Team Collaboration",
     "name": "AI Team Collaboration",
-    "count": 1
+    "count": 2
   },
   {
     "id": "AI Customer Service Assistant",
     "name": "AI Customer Service Assistant",
-    "count": 5
+    "count": 6
   },
   {
     "id": "Large Language Models (LLMs)",
@@ -127,7 +127,7 @@
   {
     "id": "AI Chatbot",
     "name": "AI Chatbot",
-    "count": 9
+    "count": 10
   },
   {
     "id": "AI Interview Assistant",
@@ -217,7 +217,7 @@
   {
     "id": "AI Content Generator",
     "name": "AI Content Generator",
-    "count": 1
+    "count": 3
   },
   {
     "id": "NSFW",
@@ -247,7 +247,7 @@
   {
     "id": "AI Landing Page Builder",
     "name": "AI Landing Page Builder",
-    "count": 1
+    "count": 2
   },
   {
     "id": "AI Task Management",
@@ -297,7 +297,7 @@
   {
     "id": "No-Code&Low-Code",
     "name": "No-Code&Low-Code",
-    "count": 1
+    "count": 2
   },
   {
     "id": "Fun Tools",
@@ -317,6 +317,31 @@
   {
     "id": "Other",
     "name": "Other",
+    "count": 1
+  },
+  {
+    "id": "Text to Image",
+    "name": "Text to Image",
+    "count": 2
+  },
+  {
+    "id": "AI Profile Picture Generator",
+    "name": "AI Profile Picture Generator",
+    "count": 1
+  },
+  {
+    "id": "AI Photo & Image Generator",
+    "name": "AI Photo & Image Generator",
+    "count": 1
+  },
+  {
+    "id": "AI Tutorial",
+    "name": "AI Tutorial",
+    "count": 1
+  },
+  {
+    "id": "AI Avatar Generator",
+    "name": "AI Avatar Generator",
     "count": 1
   }
 ]
